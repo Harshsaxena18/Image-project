@@ -1,0 +1,102 @@
+/* Overall App styling */
+.App {
+    text-align: center;
+    padding: 20px;
+    font-family: sans-serif; /* Modern font choice */
+    background-color: white; /* Light background for the entire app */
+  }
+   
+  /* File input styling */
+  input[type="file"] {
+    margin-bottom: 20px;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding for better usability */
+  }
+  
+  /* Image container styling */
+  .image-container {
+    position: relative;
+    margin: 0 auto; /* Center the container horizontally */
+    width: 50%; /* Adjust width as needed */
+    overflow: hidden; /* Hides overflowing parts of the image */
+    border-radius: 10px; /* Rounded corners for a modern look */
+  }
+  
+  /* Navigation (buttons) styling */
+  .navigation {
+    position: absolute;
+    bottom: 20px; /* Adjust button placement as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 50%; /* Adjust button container width */
+  }
+  
+  .image-container .slick-slide img {
+    display: block;
+    margin: 0 auto;
+    object-fit: cover; /* Scales image to fill the slide container */
+    
+  }
+  .custom-button {
+    background: orange; /* Yellow gradient */
+    border: none; /* Remove default border */
+    padding: 10px 20px;
+    color: aliceblue;
+    font-weight: 550;
+    margin: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px; /* Rounded corners for curved edges */
+    transition: all 0.2s ease-in-out; /* Smooth transition on hover */
+    transform: scale(1); /* Initial scale */
+  }
+  
+  .custom-button:hover {
+    background: linear-gradient(to right, #008CBA, #4CAF50); /* Reversed gradient on hover */
+  
+    transform: scale(1.05);
+  }
+  .custom-upload {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+    background: linear-gradient(to right, #0f7cdb, #0d49e3); /* Yellow gradient */
+    border: none; /* Remove default border */
+    padding: 10px 20px;
+    color: aliceblue;
+    font-weight: 550;
+    margin: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px; /* Rounded corners for curved edges */
+    transition: all 0.2s ease-in-out; /* Smooth transition on hover */
+    transform: scale(1); /* Initial scale */
+  }
+  
+  .custom-upload input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+  }
+  .custom-upload:hover {
+    background: linear-gradient(to right, #008CBA, #4CAF50); /* Reversed gradient on hover */
+  
+    transform: scale(1.05);
+  }
+  @media only screen and (max-width: 768px) {
+
+    
+  
+    /* Image container styling for small screens */
+    .image-container {
+      /* Add your styles for smaller screens here */
+      width: 100%; }} 
